@@ -40,6 +40,7 @@
 
 ## Build and Run
 ```bash
+lake update
 lake build
 lake exe ae
 ```
