@@ -1,24 +1,60 @@
-name = "AccountableEntities"
-version = "0.1.0"
-defaultTargets = ["StructuralExplainability"]
-keywords = [
-"formal-ontology",
-"identity-regimes",
-"structural-explainability",
-"accountability",
-"semantic-interoperability",
-"formal-verification",
-"theorem-proving",
-"lean4",
-"necessity-and-sufficiency",
-"structural-constraints"
-]
+# REQ.FILE.PROJECT.IDENTITY
+#   Declares the externally visible identity and build surface of this package.
+#   Sections marked CUSTOM are expected to vary by repository.
 
+# ============================================================
+# REQUIRED PROJECT IDENTITY (stable structure, custom values)
+# ============================================================
+
+# REQ.PROJECT.NAME
+#   Canonical package name.
+#   CUSTOM: Must match repository naming.
+name = "AccountableEntities"
+
+# REQ.PROJECT.VERSION
+#   Semantic version.
+#   Increment only for externally visible logical changes.
+version = "0.1.0"
+
+# REQ.PROJECT.LICENSE
+#   Open license permitting reuse of formal artifacts.
 license = "MIT"
 
+# REQ.PROJECT.KEYWORDS
+#   Discovery metadata for Lean, GitHub, and academic indexing.
+#   CUSTOM: Adjust to reflect repository scope.
+keywords = [
+  "structural-explainability",
+  "accountability",
+  "semantic-interoperability",
+  "structural-constraints",
+  "identity-regimes",
+  "formal-ontology",
+  "formal-verification",
+  "theorem-proving",
+  "lean4",
+
+]
+
+# ============================================================
+# REQUIRED BUILD SURFACE (invariant across repos)
+# ============================================================
+
+# REQ.BUILD.DEFAULT_TARGETS
+#   Default build surface.
+#   MUST include the public library root.
+defaultTargets = ["StructuralExplainability"]
+
+# REQ.LIB.PUBLIC
+#   Public Lean library exported by this package.
+#   Downstream projects import this by name.
 [[lean_lib]]
 name = "StructuralExplainability"
 
+# REQ.EXEC.VERIFICATION
+#   Minimal executable used to verify that the
+#   formalization compiles end-to-end under CI and local builds.
+#   Executable MUST remain trivial.
 [[lean_exe]]
-name = "ae"
+name = "verify"
 root = "Main"
