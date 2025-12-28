@@ -1,8 +1,8 @@
 # Structural Explainability: Accountable Entities
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Build Status](https://github.com/civic-interconnect/AccountableEntities/actions/workflows/ci.yml/badge.svg)
-[![Check Links](https://github.com/civic-interconnect/AccountableEntities/actions/workflows/links.yml/badge.svg)](https://github.com/civic-interconnect/AccountableEntities/actions/workflows/links.yml)
+![Build Status](https://github.com/structural-explainability/AccountableEntities/actions/workflows/ci.yml/badge.svg)
+[![Check Links](https://github.com/structural-explainability/AccountableEntities/actions/workflows/links.yml/badge.svg)](https://github.com/structural-explainability/AccountableEntities/actions/workflows/links.yml)
 
 > Lean 4 formalization of Accountable Entities (AE): six named entity kinds and their mapping to six identity regimes.
 
@@ -27,6 +27,10 @@ lake update
 lake build
 lake exe verify
 ```
+
+## Annotations
+
+[Annotations.md](./ANNOTATIONS.md)
 
 ## Citation
 
