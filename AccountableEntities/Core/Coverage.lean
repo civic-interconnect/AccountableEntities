@@ -1,4 +1,5 @@
--- StructuralExplainability/AccountableEntities/Coverage.lean
+import AccountableEntities.Core.RegimeMapping
+
 /-
 Completeness and correctness proofs for the entity-kind -> identity-regime mapping.
 
@@ -12,9 +13,7 @@ Reminders:
 - A function is bijective if it is both injective and surjective.
 -/
 
-import StructuralExplainability.AccountableEntities.RegimeMapping
-
-namespace StructuralExplainability.AccountableEntities
+namespace AccountableEntities.Core
 
 open NamedEntityKind
 open IdentityRegime
@@ -112,4 +111,4 @@ theorem regimeInstances_unique_length :
   intro r
   cases r <;> rfl
 
-end StructuralExplainability.AccountableEntities
+end AccountableEntities.Core

@@ -1,6 +1,4 @@
--- StructuralExplainability/AccountableEntities/EntityKinds.lean
-
-namespace StructuralExplainability.AccountableEntities
+namespace AccountableEntities.Core
 
 /--
 Core named entity kinds derived from common entity recognition taxonomies
@@ -15,4 +13,4 @@ inductive NamedEntityKind where
   | Observation
   deriving Repr, BEq, DecidableEq
 
-end StructuralExplainability.AccountableEntities
+end AccountableEntities.Core

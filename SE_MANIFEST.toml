@@ -20,7 +20,12 @@ required = [
 optional = []
 
 [provides]
-artifacts = ["README.md"]
+artifacts = [
+  "ANNOTATIONS.md",
+  "CITATION.cff",
+  "README.md",
+  "SE_MANIFEST.toml"
+]
 
 [scope]
 includes = [
@@ -36,7 +41,7 @@ excludes = [
 [citation]
 cff = "CITATION.cff"
 preferred = "repo"
-bib_hint = "ae-lean-2025"
+bib_hint = "case2025-lean-ae"
 
 [traceability]
-identifier_map = "EvolutionProtocol/Spec/IdentifierMap.lean"
+identifier_map = "AccountableEntities/Spec/IdentifierMap.lean"

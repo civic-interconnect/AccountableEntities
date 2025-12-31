@@ -1,12 +1,11 @@
--- StructuralExplainability/AccountableEntities/MappingJustification.lean
+import AccountableEntities.Core.RegimeMapping
+
 /-
 Semantic justification for entity-to-regime mappings.
 Formalizes the rationale for why each entity kind maps to its assigned regime.
 -/
 
-import StructuralExplainability.AccountableEntities.RegimeMapping
-
-namespace StructuralExplainability.AccountableEntities
+namespace AccountableEntities.Core
 
 /--
 An entity is appropriately ActorBound when it exhibits agency and persistent identity.
@@ -174,4 +173,4 @@ theorem dataset_is_observation_bound : IsObservationBound datasetObservationJust
   unfold IsObservationBound datasetObservationJustification
   simp
 
-end StructuralExplainability.AccountableEntities
+end AccountableEntities.Core

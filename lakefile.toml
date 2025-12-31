@@ -42,13 +42,13 @@ keywords = [
 # REQ.BUILD.DEFAULT_TARGETS
 #   Default build surface.
 #   MUST include the public library root.
-defaultTargets = ["StructuralExplainability"]
+defaultTargets = ["AccountableEntities"]
 
 # REQ.LIB.PUBLIC
 #   Public Lean library exported by this package.
 #   Downstream projects import this by name.
 [[lean_lib]]
-name = "StructuralExplainability"
+name = "AccountableEntities"
 
 # REQ.EXEC.VERIFICATION
 #   Minimal executable used to verify that the

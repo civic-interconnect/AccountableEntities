@@ -1,6 +1,6 @@
-import StructuralExplainability.AccountableEntities.Spec.Kind
+import AccountableEntities.Spec.Kind
 
-namespace StructuralExplainability.AccountableEntities.Spec
+namespace AccountableEntities.Spec
 
 -- Repo: structural-explainability/AccountableEntities
 -- Path: AccountableEntities/Spec/KindNames.lean
@@ -34,4 +34,4 @@ abbrev Scope : Kind := Kind.K5
 /-- Accountable recorded claim, measurement, or assertion. -/
 abbrev Observation : Kind := Kind.K6
 
-end StructuralExplainability.AccountableEntities.Spec
+end AccountableEntities.Spec

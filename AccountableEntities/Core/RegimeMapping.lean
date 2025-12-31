@@ -1,8 +1,6 @@
--- StructuralExplainability/AccountableEntities/RegimeMapping.lean
+import AccountableEntities.Core.EntityKinds
 
-import StructuralExplainability.AccountableEntities.EntityKinds
-
-namespace StructuralExplainability.AccountableEntities
+namespace AccountableEntities.Core
 
 /--
 The six necessary and sufficient identity regimes from the proof series.
@@ -48,4 +46,4 @@ def regimeInstances (r : IdentityRegime) : List NamedEntityKind :=
   | .ScopeBound => [.Scope]
   | .ObservationBound => [.Observation]
 
-end StructuralExplainability.AccountableEntities
+end AccountableEntities.Core
